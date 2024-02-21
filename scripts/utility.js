@@ -72,10 +72,38 @@ function getConvertedValue(id){
           
 
           const selectedContainer = document.getElementById("seat-container");
+
+           event.target.setAttribute("disabled",false);
+           event.target.style.backgroundColor = "green";
+
+
+
+
+          const seatCount = getConvertedValue("seat-add");{
+            if(seatCount+1>4){
+                alert("Limit Cross");
+                return;
+            }
+          }
+
+
+
+          const seatCountLeft = getConvertedValue("seat-left");{
+            if(seatCountLeft-1<0){
+                alert("Seat not available");
+                return;
+            }
+          }
+
+
+
            
         //   update seat number
 
-         const seatAdd = getConvertedValue()
+         const seatAdd = getConvertedValue("seat-add");
+          document.getElementById("seat-add").innerText=seatAdd+1;
+         const seatLeft = getConvertedValue("seat-left");
+          document.getElementById("seat-left").innerText=seatLeft-1;
 
 
 
