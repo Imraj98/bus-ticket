@@ -72,6 +72,11 @@ function getConvertedValue(id){
           
 
           const selectedContainer = document.getElementById("seat-container");
+           
+        //   update seat number
+
+         const seatAdd = getConvertedValue()
+
 
 
           const div = document.createElement("div");
