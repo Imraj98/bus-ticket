@@ -117,7 +117,7 @@
                     <img class="h-[200px]" src="images/cupon-devider.png" alt="">
                 </div>
                 <div>
-                    <p class=" font-family text-4xl font-bold pt-14 pl-10">NEW15 <br>
+                    <p id="coupon-code1" class=" font-family text-4xl font-bold pt-14 pl-10">NEW15 <br>
                         <span class="text-sm text-gray-500 font-normal">Coupon Code</span>
 
                     </p>
@@ -339,8 +339,8 @@
                         </div>
 
                         <div class="">
-                            <input class="w-[300px] h-[40px] rounded-md" type="text" placeholder="Have any coupon?">
-                            <button class="btn btn-active btn-neutral bg-[#1DD100]">Apply</button>
+                            <input id="coupon-code" class="w-[300px] h-[40px] rounded-md" type="text" placeholder="Have any coupon?">
+                            <button onclick="updateGrandtotal('apply-btn')" id="apply-btn" class="btn btn-active btn-neutral bg-[#1DD100]">Apply</button>
                         </div>
                         <div class="flex justify-between mr-12 text-base font-semibold">
                             <p>Grand Total</p>

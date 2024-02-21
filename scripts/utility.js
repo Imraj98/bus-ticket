@@ -18,10 +18,32 @@ function showElementById(elementId){
  }
 
 // grand total
- function updateGrandtotal(){
+ function updateGrandtotal(status){
+
     const totalCost = getConvertedValue('total-price');
+     if(status==undefined){
+        
 
     document.getElementById("grand-total").innerText=totalCost;
+
+     }
+     else{
+        const couponCode = document.getElementById("coupon-code").value;
+        if(couponCode =="NEW15"){
+                const discount =totalCost*15/100;
+                document.getElementById("grand-total").innerText= parseFloat(totalCost-discount);
+        }
+        else if(couponCode =="Couple20"){
+            const discount =totalCost*0.2;
+                document.getElementById("grand-total").innerText= parseFloat(totalCost-discount);
+        }
+        else{
+            alert("Please enter valid coupon code")
+        }
+    
+     }
+
+
  }
 
 
