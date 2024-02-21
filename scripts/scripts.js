@@ -19,4 +19,14 @@ function submit (){
 
  }
 
-//  seat left
+//  modal
+function continues(){
+ 
+
+   showElementById('main');
+   showElementById('header');
+ // unhide
+ hideElementById('modal');
+   
+
+ }

@@ -74,17 +74,18 @@ function getConvertedValue(id){
           const selectedContainer = document.getElementById("seat-container");
 
            event.target.setAttribute("disabled",false);
-           event.target.style.backgroundColor = "green";
+           
 
 
 
 
-          const seatCount = getConvertedValue("seat-add");{
+          const seatCount = getConvertedValue("seat-add");
             if(seatCount+1>4){
                 alert("Limit Cross");
                 return;
             }
-          }
+            
+            event.target.style.backgroundColor = "green";
 
 
 
