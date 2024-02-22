@@ -67,7 +67,7 @@ function getConvertedValue(id){
  for(const btn of allBtn){
     btn.addEventListener('click',function(event){
           const seatPostion =event.target.innerText;
-          const classes = 'Economoy';
+          const classes = 'Economy';
           const number  = 550;
           
 

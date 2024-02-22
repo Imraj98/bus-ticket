@@ -9,7 +9,10 @@ function ticketBooking(){
 // hide 
 
 function submit (){
- 
+     
+
+  
+    
 
    hideElementById('main');
    hideElementById('header');
@@ -21,7 +24,8 @@ function submit (){
 
 //  modal
 function continues(){
- 
+   
+   
 
    showElementById('main');
    showElementById('header');
